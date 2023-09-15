@@ -1,19 +1,32 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
-
-// Module options TypeScript interface definition
-export interface ModuleOptions {}
+import { defineNuxtModule, createResolver, installModule } from '@nuxt/kit'
+import {ModuleOptions} from "./runtime/module";
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule'
-  },
-  // Default configuration options of the Nuxt module
-  defaults: {},
-  setup (options, nuxt) {
-    const resolver = createResolver(import.meta.url)
+    // Usually the npm package name of your module
+    name: 'random-number-generator-rmb',
+    // The key in `nuxt.config` that holds your module options
+    configKey: 'random-number-generator-rmb',
 
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve('./runtime/plugin'))
+  },
+  async setup (options, nuxt) {
+    const { resolve } = createResolver(import.meta.url)
+
+    // We can inject our CSS file which includes Tailwind's directives
+    nuxt.options.css.push(resolve('./runtime/assets/styles.css'))
+
+    await installModule('@nuxtjs/tailwindcss', {
+      // module configuration
+      exposeConfig: true,
+      config: {
+        darkMode: 'class',
+        content: {
+          files: [
+            resolve('./runtime/components/**/*.{vue,mjs,ts}'),
+            resolve('./runtime/*.{mjs,js,ts}')
+          ]
+        }
+      }
+    })
   }
 })
