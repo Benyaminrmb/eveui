@@ -1,6 +1,6 @@
 {
-  "name": "eveui",
-  "version": "0.0.1-beta",
+          "name": "eveui",
+  "version": "0.0.2-beta",
   "description": "eveUI - Tailwind CSS Components",
   "author": "Benyamin Bolhassani",
   "keywords": [
@@ -19,7 +19,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebase": "postcss --config src/base src/base/*.css --base src --dir dist"
   },
   "repository": {
     "type": "git",
