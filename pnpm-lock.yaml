@@ -11,20 +11,20 @@ dependencies:
   css-selector-tokenizer:
     specifier: ^0.8
     version: 0.8.0
-  postcss:
-    specifier: ^8
-    version: 8.4.29
   postcss-js:
     specifier: ^4
     version: 4.0.1(postcss@8.4.29)
   tailwindcss:
-    specifier: ^3
+    specifier: ^3.3.3
     version: 3.3.3
 
 devDependencies:
   autoprefixer:
     specifier: ^10
     version: 10.4.15(postcss@8.4.29)
+  postcss:
+    specifier: ^8.4.29
+    version: 8.4.29
   postcss-cli:
     specifier: 10.1.0
     version: 10.1.0(postcss@8.4.29)
