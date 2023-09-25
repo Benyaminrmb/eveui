@@ -4,4 +4,16 @@
     @apply text-sm font-semibold text-white;
     @apply bg-indigo-600 hover:bg-indigo-500;
     @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+
+    &-primary {
+        @apply border-primary bg-primary text-primary-content outline-primary;
+        @media (hover: hover) {
+            &:hover {
+                @apply border-primary-focus bg-primary-focus;
+            }
+        }
+        &.btn-active {
+            @apply border-primary-focus bg-primary-focus;
+        }
+    }
 }
