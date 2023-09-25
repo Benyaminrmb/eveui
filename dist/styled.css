@@ -1,0 +1,8 @@
+.btn {
+    @apply px-2.5 py-1.5;
+    @apply rounded-md shadow-sm;
+    @apply text-sm font-semibold text-white;
+    @apply bg-indigo-600 hover:bg-indigo-500;
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9jb21wb25lbnRzL3N0eWxlZC9idG4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6ImJ0bi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuIHtcclxuICAgIEBhcHBseSBweC0yLjUgcHktMS41O1xyXG4gICAgQGFwcGx5IHJvdW5kZWQtbWQgc2hhZG93LXNtO1xyXG4gICAgQGFwcGx5IHRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LXdoaXRlO1xyXG4gICAgQGFwcGx5IGJnLWluZGlnby02MDAgaG92ZXI6YmctaW5kaWdvLTUwMDtcclxuICAgIEBhcHBseSBmb2N1cy12aXNpYmxlOm91dGxpbmUgZm9jdXMtdmlzaWJsZTpvdXRsaW5lLTIgZm9jdXMtdmlzaWJsZTpvdXRsaW5lLW9mZnNldC0yIGZvY3VzLXZpc2libGU6b3V0bGluZS1pbmRpZ28tNjAwO1xyXG59Il19 */
