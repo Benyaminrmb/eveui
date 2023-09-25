@@ -1,9 +1,10 @@
 const plugin = require('tailwindcss/plugin')
 const tailwindColors = require("tailwindcss/colors")
 const colors = require("./theming/index")
+const theme = require("./theming/themes")
 
 
-function mainFunction({ addUtilities, addComponents }) {
+function mainFunction({ addUtilities, addComponents,theme}) {
     const components = require('../dist/styled')
     const utilities = require('../dist/utilities')
     console.log('...EveUI init...')
@@ -14,7 +15,7 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
     theme: {
         extend: {
             colors: {
-                ...colors,
+                ...theme["theme-1"],
                 // adding all Tailwind `neutral` shades here so they don't get overridden by daisyUI `neutral` color
                 "aaaaaaaaaa": tailwindColors.red[500],
                 "neutral-50": tailwindColors.neutral[50],
