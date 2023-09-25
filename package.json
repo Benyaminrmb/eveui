@@ -1,6 +1,6 @@
 {
   "name": "eveui",
-  "version": "0.0.10-beta",
+  "version": "0.1.0",
   "description": "eveUI - Tailwind CSS Components",
   "author": "Benyamin Bolhassani",
   "keywords": [
@@ -21,20 +21,12 @@
   "scripts": {
     "build:components:css": "postcss --config src/components src/components/**/*.css --base src --dir dist",
     "build:utilities:css": "postcss --config src/utilities src/utilities/*.css --base src --dir dist",
-
-
     "merge:components:styled": "cat dist/components/styled/*.css > dist/styled.css",
     "merge:utilities:styled": "cat dist/utilities/*.css > dist/utilities.css",
-
-
     "build:components": "pnpm build:components:css && pnpm merge:components:styled && pnpm build:utilities:css && pnpm merge:utilities:styled",
-
-
-
     "build:prejss:components": "prejss-cli dist/styled.css --format commonjs",
     "build:prejss:utilities": "prejss-cli dist/utilities.css --format commonjs",
     "build:prejss": "pnpm build:prejss:components && pnpm build:prejss:utilities",
-
     "build": "pnpm build:components && pnpm build:prejss"
   },
   "repository": {
@@ -64,7 +56,6 @@
     "postcss-js": "^4"
   },
   "dependencies": {
-
     "tailwindcss": "^3.3.3"
   }
 }
