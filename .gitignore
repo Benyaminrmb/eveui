@@ -13,14 +13,6 @@ node_modules
 **/.yarn/cache
 **/.yarn/*state*
 
-# Nuxt
-.nuxt
-.output
-.data
-.vercel_build_output
-.build-*
-.netlify
-
 # Env
 .env
 
