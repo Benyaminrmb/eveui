@@ -1,6 +1,6 @@
 {
   "name": "eveui",
-  "version": "0.0.15-beta",
+  "version": "0.0.18-beta",
   "description": "eveUI - Tailwind CSS Components",
   "author": "Benyamin Bolhassani",
   "keywords": [
@@ -39,7 +39,8 @@
     "url": "https://github.com/Benyaminrmb/eveui/issues"
   },
   "files": [
-    "dist/*"
+    "dist/*",
+    "src/theming/*"
   ],
   "homepage": "https://github.com/Benyaminrmb/eveui#readme",
   "devDependencies": {
