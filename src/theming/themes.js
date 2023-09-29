@@ -1,14 +1,17 @@
 module.exports = {
-  "theme-1":{
-    "primary": "#09ecf3",
-    "primary-content": "#005355",
-    "secondary": "#966fb3",
-    "accent": "#ffe999",
-    "neutral": "#3b8ac4",
-    "base-100": "#345da7",
-    "info": "#2563eb",
-    "success": "#16a34a",
-    "warning": "#d97706",
-    "error": "#dc2626",
-  }
+  "[data-theme=light]": {
+    "color-scheme": "light",
+    "primary": "#570df8",
+    "primary-content": "#E0D2FE",
+    "secondary": "#f000b8",
+    "secondary-content": "#FFD1F4",
+    "accent": "#1ECEBC",
+    "accent-content": "#07312D",
+    "neutral": "#2B3440",
+    "neutral-content": "#D7DDE4",
+    "base-100": "#ffffff",
+    "base-200": "#F2F2F2",
+    "base-300": "#E5E6E6",
+    "base-content": "#1f2937",
+  },
 }

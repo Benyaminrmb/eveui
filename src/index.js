@@ -3,20 +3,33 @@ const tailwindColors = require("tailwindcss/colors")
 const colors = require("./theming/index")
 const theme = require("./theming/themes")
 const p = require("./../package.json")
+const colorFunctions = require("./theming/functions")
+const themes = require("./theming/themes")
 
 
-function mainFunction({ addUtilities, addComponents,theme}) {
+function mainFunction({ addBase,addUtilities, addComponents,config}) {
+
+
+    const themeInjectorHsl = colorFunctions.injectThemes(addBase, config, themes, "hsl")
+    themeInjectorHsl
+
+
     const components = require('../dist/styled')
     const utilities = require('../dist/utilities')
     console.log(`...EveUI init haha [${p.version}]...`)
     addUtilities(utilities)
     addComponents(components)
+
+
+
+    console.log('themeInjectorHsl',themeInjectorHsl)
+
 }
 module.exports = require("tailwindcss/plugin")(mainFunction, {
     theme: {
         extend: {
             colors: {
-                ...theme["theme-1"],
+                ...colors,
                 // adding all Tailwind `neutral` shades here so they don't get overridden by daisyUI `neutral` color
                 "aaaaaaaaaa": tailwindColors.red[500],
                 "neutral-50": tailwindColors.neutral[50],

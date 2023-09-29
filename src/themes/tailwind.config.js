@@ -6,7 +6,7 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  daisyui: {
+  eveui: {
     base: false,
     themes: true,
   },
