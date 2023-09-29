@@ -2,12 +2,13 @@ const plugin = require('tailwindcss/plugin')
 const tailwindColors = require("tailwindcss/colors")
 const colors = require("./theming/index")
 const theme = require("./theming/themes")
+const p = require("./../package.json")
 
 
 function mainFunction({ addUtilities, addComponents,theme}) {
     const components = require('../dist/styled')
     const utilities = require('../dist/utilities')
-    console.log('...EveUI init...')
+    console.log(`...EveUI init haha [${p.version}]...`)
     addUtilities(utilities)
     addComponents(components)
 }
