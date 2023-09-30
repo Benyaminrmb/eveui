@@ -1,6 +1,6 @@
 {
   "name": "eveui",
-  "version": "0.0.19-beta",
+  "version": "0.0.20-beta",
   "description": "eveUI - Tailwind CSS Components",
   "author": "Benyamin Bolhassani",
   "keywords": [
@@ -27,8 +27,9 @@
     "build:prejss:components": "prejss-cli dist/styled.css --format commonjs",
     "build:prejss:utilities": "prejss-cli dist/utilities.css --format commonjs",
     "build:prejss": "pnpm build:prejss:components && pnpm build:prejss:utilities",
-    "themes": "postcss src/themes/index.css -o dist/themes.css --config src/themes",
-    "build": "pnpm build:components && pnpm build:prejss",
+    "build:themes": "postcss src/themes/index.css -o dist/themes.css --config src/themes",
+    "build": "pnpm build:components && pnpm build:prejss && pnpm build:themes && pnpm full",
+    "full": "postcss src/full/index.css -o dist/full.css --config src/full",
     "dev": "cd playground && pnpm run dev"
   },
   "repository": {
