@@ -1,4 +1,5 @@
 const colorNames = require("./colorNames")
+const themeDefaults = require("./themeDefaults")
 const { colord, getFormat, extend } = require("colord")
 
 module.exports = {
@@ -116,6 +117,20 @@ module.exports = {
           resultObj["--erc"] = 0 + " " + 100 + "%" + " " + 14 + "%"
         }
       }
+
+      // add css variables if not exist
+      Object.entries(themeDefaults.variables).forEach((item) => {
+        const [variable, value] = item
+        if (!Object.hasOwn(input, variable)) {
+          resultObj[variable] = value
+        }
+      })
+
+      // add other custom styles
+      if (!colorNames.hasOwnProperty(rule)) {
+        resultObj[rule] = value
+      }
+
     })
     return resultObj
   },

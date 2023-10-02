@@ -12,6 +12,16 @@
     --suc: 158 100% 10%;
     --wac: 43 100% 11%;
     --erc: 0 100% 14%;
+    --rounded-box: 1rem;
+    --rounded-btn: 0.5rem;
+    --rounded-badge: 1.9rem;
+    --animation-btn: 0.25s;
+    --animation-input: .2s;
+    --btn-text-case: uppercase;
+    --btn-focus-scale: 2;
+    --border-btn: 1px;
+    --tab-border: 1px;
+    --tab-radius: 0.5rem;
     --p: 259 94% 51%;
     --pc: 259 96% 91%;
     --s: 314 100% 47%;
