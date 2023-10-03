@@ -1,5 +1,8 @@
 .btn {
     @apply font-semibold no-underline gap-2;
+    @apply px-2.5 py-2;
+    @apply rounded-md shadow-sm;
+    @apply transition;
     border-width: var(--border-btn, 1px);
     animation: button-pop var(--animation-btn, 0.25s) ease-out;
     text-transform: var(--btn-text-case, uppercase);

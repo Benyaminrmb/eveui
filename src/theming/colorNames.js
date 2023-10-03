@@ -18,6 +18,7 @@ module.exports = {
   "base-100": "--b1",
   "base-200": "--b2",
   "base-300": "--b3",
+  "base-400": "--b4",
   "base-content": "--bc",
 
   "info": "--in",
