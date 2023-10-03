@@ -20,10 +20,6 @@ function mainFunction({ addBase,addUtilities, addComponents,config}) {
     addUtilities(utilities)
     addComponents(components)
 
-
-
-    console.log('themeInjectorHsl',themeInjectorHsl)
-
 }
 module.exports = require("tailwindcss/plugin")(mainFunction, {
     theme: {
