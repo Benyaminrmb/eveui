@@ -1,6 +1,6 @@
 {
   "name": "eveui",
-  "version": "0.0.22-beta",
+  "version": "0.0.23-beta",
   "description": "eveUI - Tailwind CSS Components",
   "author": "Benyamin Bolhassani",
   "keywords": [
@@ -46,19 +46,19 @@
   "homepage": "https://github.com/Benyaminrmb/eveui#readme",
   "devDependencies": {
     "autoprefixer": "^10",
+    "css-selector-tokenizer": "^0.8",
     "postcss": "^8.4.29",
     "postcss-cli": "10.1.0",
     "postcss-import": "15.1.0",
+    "postcss-js": "^4",
     "prejss-cli": "0.3.3",
     "prettier": "^3.0.3",
     "rtlcss": "4.1.0",
     "standard-version": "^9.5.0",
-    "vitest": "^0.34.3",
-    "css-selector-tokenizer": "^0.8",
-    "postcss-js": "^4"
+    "vitest": "^0.34.3"
   },
   "dependencies": {
-    "tailwindcss": "^3.3.3",
-    "colord": "^2.9"
+    "colord": "^2.9",
+    "tailwindcss": "^3.3.3"
   }
 }

@@ -8,12 +8,6 @@ dependencies:
   colord:
     specifier: ^2.9
     version: 2.9.3
-  css-selector-tokenizer:
-    specifier: ^0.8
-    version: 0.8.0
-  postcss-js:
-    specifier: ^4
-    version: 4.0.1(postcss@8.4.29)
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
@@ -22,6 +16,9 @@ devDependencies:
   autoprefixer:
     specifier: ^10
     version: 10.4.15(postcss@8.4.29)
+  css-selector-tokenizer:
+    specifier: ^0.8
+    version: 0.8.0
   postcss:
     specifier: ^8.4.29
     version: 8.4.29
@@ -31,6 +28,9 @@ devDependencies:
   postcss-import:
     specifier: 15.1.0
     version: 15.1.0(postcss@8.4.29)
+  postcss-js:
+    specifier: ^4
+    version: 4.0.1(postcss@8.4.29)
   prejss-cli:
     specifier: 0.3.3
     version: 0.3.3
@@ -564,7 +564,6 @@ packages:
   /camelcase-css@2.0.1:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
     engines: {node: '>= 6'}
-    dev: false
 
   /camelcase-keys@6.2.2:
     resolution: {integrity: sha512-YrwaA0vEKazPBkn0ipTiMpSajYDSe+KjQfrjhcBMxJt/znbvlHd8Pw/Vamaz5EB4Wfhs3SUR3Z9mwRu/P3s3Yg==}
@@ -899,13 +898,12 @@ packages:
     dependencies:
       cssesc: 3.0.0
       fastparse: 1.1.2
-    dev: false
+    dev: true
 
   /cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
-    dev: false
 
   /dargs@7.0.0:
     resolution: {integrity: sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==}
@@ -1079,7 +1077,7 @@ packages:
 
   /fastparse@1.1.2:
     resolution: {integrity: sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==}
-    dev: false
+    dev: true
 
   /fastq@1.15.0:
     resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
@@ -1920,7 +1918,6 @@ packages:
     dependencies:
       camelcase-css: 2.0.1
       postcss: 8.4.29
-    dev: false
 
   /postcss-load-config@1.2.0:
     resolution: {integrity: sha512-3fpCfnXo9Qd/O/q/XL4cJUhRsqjVD2V1Vhy3wOEcLE5kz0TGtdDXJSoiTdH4e847KphbEac4+EZSH4qLRYIgLw==}

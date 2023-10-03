@@ -18,7 +18,7 @@
     --animation-btn: 0.25s;
     --animation-input: .2s;
     --btn-text-case: uppercase;
-    --btn-focus-scale: 2;
+    --btn-focus-scale: 0.95;
     --border-btn: 1px;
     --tab-border: 1px;
     --tab-radius: 0.5rem;
