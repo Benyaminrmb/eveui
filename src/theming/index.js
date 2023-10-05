@@ -22,6 +22,7 @@ let colorObject = {
     "base-200": "hsl(var(--b2) / <alpha-value>)",
     "base-300": "hsl(var(--b3) / <alpha-value>)",
     "base-400": "hsl(var(--b4) / <alpha-value>)",
+    "base-500": "hsl(var(--b5) / <alpha-value>)",
     "base-content": "hsl(var(--bc) / <alpha-value>)",
 
     "info": "hsl(var(--in) / <alpha-value>)",

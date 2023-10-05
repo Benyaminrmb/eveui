@@ -57,6 +57,21 @@ module.exports = {
           resultObj["--b3"] = this.generateDarkenColorFrom(input["base-100"], 0.14)
         }
       }
+      if (!Object.hasOwn(input, "base-400")) {
+        if (Object.hasOwn(input, "base-300")) {
+          resultObj["--b4"] = this.generateDarkenColorFrom(input["base-300"])
+        } else {
+          resultObj["--b4"] = this.generateDarkenColorFrom(input["base-100"], 0.21)
+        }
+      }
+
+      if (!Object.hasOwn(input, "base-500")) {
+        if (Object.hasOwn(input, "base-400")) {
+          resultObj["--b5"] = this.generateDarkenColorFrom(input["base-400"])
+        } else {
+          resultObj["--b5"] = this.generateDarkenColorFrom(input["base-100"], 0.28)
+        }
+      }
 
       // auto generate state colors
 
