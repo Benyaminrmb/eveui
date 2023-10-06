@@ -15,5 +15,13 @@ module.exports = {
     "base-400": "#E5E6E6",
     "base-500": "#D5D6D6",
     "base-content": "#1f2937",
+    "info": "#0070F3",
+    "info-content": "#ffffff",
+    "success": "#21CC51",
+    "success-content": "#000000",
+    "warning": "#FF6154",
+    "warning-content": "#ffffff",
+    "error": "#DE1C8D",
+    "error-content": "#ffffff",
   },
 }

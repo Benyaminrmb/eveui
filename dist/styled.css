@@ -32,6 +32,8 @@
 
   transition-duration: 150ms;
 
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
   border-width: var(--border-btn, 1px);
   animation: button-pop var(--animation-btn, 0.25s) ease-out;
   text-transform: var(--btn-text-case, uppercase);
